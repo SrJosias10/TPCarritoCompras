@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MrOmar95\\Desktop\\TPCarritoCompras\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0464A721-B259-49CD-8277-2B5EC9E6FD3A}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\tpcarritocompras\\webapplication\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0464A721-B259-49CD-8277-2B5EC9E6FD3A}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0464A721-B259-49CD-8277-2B5EC9E6FD3A}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\tpcarritocompras\\webapplication\\mimaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0464A721-B259-49CD-8277-2B5EC9E6FD3A}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\mimaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Inicio.aspx",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\TPCarritoCompras\\WebApplication\\Inicio.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Inicio.aspx",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\TPCarritoCompras\\WebApplication\\Inicio.aspx",
+              "RelativeToolTip": "WebApplication\\Inicio.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-13T00:56:26.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MiMaster.Master",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\TPCarritoCompras\\WebApplication\\MiMaster.Master",
+              "RelativeDocumentMoniker": "WebApplication\\MiMaster.Master",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\TPCarritoCompras\\WebApplication\\MiMaster.Master",
+              "RelativeToolTip": "WebApplication\\MiMaster.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-13T00:51:40.71Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
