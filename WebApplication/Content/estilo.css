@@ -1,0 +1,82 @@
+﻿body {
+    background: linear-gradient(to right, #8dc5d4, #a0d0db, #b3dbe3, #a0d0db, #8dc5d4);
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white
+}
+
+.letra {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+}
+
+.fondo-secciones {
+    background-color: black;
+    padding: 0 20px;
+}
+
+.suave {
+    transition: all 0.5s ease;
+}
+/*Seccion de menu*/
+#minimenu {
+    text-align: center;
+}
+
+    #minimenu nav a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 10px;
+        border: 12px solid transparent;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+        #minimenu nav a:hover {
+            border-bottom: 2px solid #1ebadd;
+            font-size: 22px;
+            color: #8dc5d4;
+        }
+
+#opciones a {
+    color: #ffffff;
+}
+
+    #opciones a.suave {
+        margin-right: auto;
+    }
+
+@media(max-width: 800px) {
+    #minimenu nav a {
+        border: 1px solid transparent;
+        font-size: 10px;
+    }
+
+        #minimenu nav a:hover {
+            font-size: 11px;
+        }
+}
+#opciones {
+    display: flex;
+    align-items: center;
+}
+
+.tbx {
+    background: linear-gradient(to right, #8dc5d4, #a0d0db, #b3dbe3, #a0d0db, #8dc5d4);
+    color: black;
+    border: 2px solid #ffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tbx:hover {
+    background-color: #0056b3;
+    border-color: white;
+}
+@media(max-width: 800px) {
+    .tbx {
+        font-size: 10px;
+    }
+}
