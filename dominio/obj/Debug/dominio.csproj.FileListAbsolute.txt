@@ -4,3 +4,9 @@ C:\Users\MrOmar95\Desktop\TPCarritoCompras\dominio\obj\Debug\dominio.csproj.Asse
 C:\Users\MrOmar95\Desktop\TPCarritoCompras\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\MrOmar95\Desktop\TPCarritoCompras\dominio\obj\Debug\dominio.dll
 C:\Users\MrOmar95\Desktop\TPCarritoCompras\dominio\obj\Debug\dominio.pdb
+C:\Users\Agustin\TPCarritoCompras\dominio\bin\Debug\dominio.dll
+C:\Users\Agustin\TPCarritoCompras\dominio\bin\Debug\dominio.pdb
+C:\Users\Agustin\TPCarritoCompras\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Agustin\TPCarritoCompras\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Agustin\TPCarritoCompras\dominio\obj\Debug\dominio.dll
+C:\Users\Agustin\TPCarritoCompras\dominio\obj\Debug\dominio.pdb
