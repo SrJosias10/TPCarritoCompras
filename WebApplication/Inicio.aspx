@@ -2,17 +2,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>aca vas a poder ver todos los articulos para comprar...</h2>
+            <div class="row mt-4">
+            <div class="col-12">
+                <h2>Dormi tranquilo teniendo TuSolucion ....</h2>
+            </div>
+            </div>
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/Content/example1.png" class="d-block w-100" alt="...">
+      <img src="/Content/exa1.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/Content/example2.png" class="d-block w-100" alt="...">
+      <img src="/Content/exa2.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/Content/example3.png" class="d-block w-100" alt="...">
+      <img src="/Content/exa3.png" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
