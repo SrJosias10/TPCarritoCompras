@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using dominio;
 using System.Security.Cryptography.X509Certificates;
+using dominio;
+using negocio;
 
-namespace negocio
+namespace Negocios
 {
     public class ArticuloNegocio
     {
@@ -61,11 +63,8 @@ namespace negocio
                     articulo.categoria = new Categoria();
                     articulo.categoria.Id = (int)datos.Lector["IdCategoria"];
                     articulo.categoria.Descripcion = (string)datos.Lector["Categoria"];
-                    Imagen imagen = new Imagen();
-                    imagen.Url = (string)datos.Lector["ImagenUrl"];
-                    articulo.imagenes.Add(imagen);
-                    /*articulo.imagen = new Imagen();
-                    articulo.imagen.Url = (string)datos.Lector["ImagenUrl"];*/
+                    articulo.imagen = new Imagen();
+                    articulo.imagen.Url = (string)datos.Lector["ImagenUrl"];
                     articulo.precio = (decimal)datos.Lector["Precio"];
 
                     lista.Add(articulo);
@@ -306,9 +305,8 @@ namespace negocio
                     articulo.marca.Descripcion = (string)datos.Lector["Marca"];
                     articulo.categoria = new Categoria();
                     articulo.categoria.Descripcion = (string)datos.Lector["Categoria"];
-                    Imagen imagen = new Imagen();
-                    imagen.Url = (string)datos.Lector["ImagenUrl"];
-                    articulo.imagenes.Add(imagen);
+                    articulo.imagen = new Imagen();
+                    articulo.imagen.Url = (string)datos.Lector["ImagenUrl"];
                     articulo.precio = (decimal)datos.Lector["Precio"];
 
                     lista.Add(articulo);

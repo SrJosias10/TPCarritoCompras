@@ -17,6 +17,9 @@
 .suave {
     transition: all 0.5s ease;
 }
+.centrar {
+    text-align: center;
+}
 /*Seccion de menu*/
 #minimenu {
     text-align: center;
@@ -38,13 +41,18 @@
             color: #8dc5d4;
         }
 
-#opciones a {
-    color: #ffffff;
+#opciones {
+    display: flex;
+    align-items: center;
 }
 
-    #opciones a.suave {
-        margin-right: auto;
+    #opciones a {
+        color: #ffffff;
     }
+
+        #opciones a.suave {
+            margin-right: auto;
+        }
 
 @media(max-width: 800px) {
     #minimenu nav a {
@@ -56,10 +64,7 @@
             font-size: 11px;
         }
 }
-#opciones {
-    display: flex;
-    align-items: center;
-}
+
 
 .tbx {
     background: linear-gradient(to right, #8dc5d4, #a0d0db, #b3dbe3, #a0d0db, #8dc5d4);
@@ -69,11 +74,6 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-}
-
-.tbx:hover {
-    background-color: #0056b3;
-    border-color: white;
 }
 @media(max-width: 800px) {
     .tbx {

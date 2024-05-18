@@ -36,14 +36,11 @@ namespace negocio
             AccessoDatos datos = new AccessoDatos();
             try
             {
-                foreach (var imagen in art.imagenes)
-                {
                     datos.setearConsulta("update IMAGENES set ImagenUrl = @URL where IdArticulo = @Id");
-                    datos.setearParametro("@URL", imagen.Url);
+                    datos.setearParametro("@URL", art.imagen.Url);
                     datos.setearParametro("@Id", art.Id);
 
                     datos.ejecutarAccion();
-                }
             }
             catch (Exception ex)
             {

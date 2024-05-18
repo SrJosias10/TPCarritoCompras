@@ -20,10 +20,10 @@
             <header>
                 <nav id="opciones">
                     <a href="/Inicio.aspx" class="suave" title="Ir al inicio"><i class="fa-solid fa-house"></i>INICIO</a>
-                    <a href="/DetalleProducto.aspx" class="suave" title="Ver productos"><i class="fa-solid fa-store"></i>PRODUCTOS</a>
+                    <a href="/SeccionProductos.aspx" class="suave" title="Ver productos"><i class="fa-solid fa-store"></i>PRODUCTOS</a>
                     <a href="/About.aspx" class="suave" title="Ver productos"><i class="fa-solid fa-user"></i>NOSOTROS</a>
                     <asp:TextBox ID="TextBox1" runat="server" CssClass="tbx"></asp:TextBox>
-                    <asp:Button ID="Button1" runat="server" Text="Buscar" CssClass="tbx" />
+                    <asp:Button ID="Button1" runat="server" Text="Buscar" CssClass="tbx"/>
                     <a href="/CarritoDeCompra.aspx" class="suave" title="Ver carrito"><i class="fa-solid fa-cart-shopping"></i></a>
                 </nav>
             </header>
