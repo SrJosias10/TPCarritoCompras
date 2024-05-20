@@ -12,11 +12,19 @@ namespace WebApplication
 {
     public partial class SeccionProductos : System.Web.UI.Page
     {
-        public  List<Articulo> ListaArticulo { get; set; }
+        public List<Articulo> ListaArticulo;
         protected void Page_Load(object sender, EventArgs e)
         {
-            ArticuloNegocio negocio = new ArticuloNegocio();
-            ListaArticulo = negocio.listar();
+            if (Session["Productos"]!=null)
+            {
+                ListaArticulo = (List<Articulo>)Session["Productos"];
+            }
+            else
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                ListaArticulo = negocio.listar();
+                Session.Add("Productos", ListaArticulo);
+            }
         }
     }
 }

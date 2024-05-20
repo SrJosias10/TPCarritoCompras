@@ -244,3 +244,5 @@ C:\Users\MrOmar95\Desktop\TPCarritoCompra - copia\WebApplication\obj\Debug\WebAp
 C:\Users\MrOmar95\Desktop\TPCarritoCompra - copia\WebApplication\obj\Debug\WebApplication.pdb
 C:\Users\MrOmar95\Desktop\TPCarritoCompra\WebApplication\bin\negocio.dll
 C:\Users\MrOmar95\Desktop\TPCarritoCompra\WebApplication\bin\negocio.pdb
+C:\Users\MrOmar95\Desktop\TPCarritoCompras\WebApplication\bin\negocio.dll
+C:\Users\MrOmar95\Desktop\TPCarritoCompras\WebApplication\bin\negocio.pdb

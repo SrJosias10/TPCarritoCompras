@@ -10,9 +10,9 @@
                onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
           <div class="card-body">
             <h5 class="card-title"><%: art.nombre %></h5>
-            <p class="card-text"><%: art.descripcion %></p>
-            <a href="DetalleProducto.aspx" class="btn btn-info">Ver detalle</a>
-            <asp:Button ID="btnCarrito" runat="server" Text="Agregar al carrito" CssClass="btn btn-success"/>
+            <p class="card-text">Precio: $<%: art.precio %></p>
+            <a href="DetalleProducto.aspx?id=<%: art.Id %>" Class="btn btn-info">Ver producto</a>
+            <a href="CarritoDeCompra.aspx?id=<%: art.Id %>" Class="btn btn-success">Añadir al carrito</a>
           </div>
         </div>
       </div>

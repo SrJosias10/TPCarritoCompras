@@ -2,43 +2,29 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <!-- Services Section -->
-        <div class="row mt-4">
-            <div class="col-12">
-                <h2>Nuestros Servicios</h2>
-            </div>
-            </div>
-        <div class="row">
+    <br />
+   <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+    <% foreach (dominio.Articulo art in detalle) { %>
+      <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/Content/prd1.png" class="card-img-top" alt="Servicios de Gestión de Programas Cautivos">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicios de Gestión de Programas Cautivos</h5>
-                        <p class="card-text">Desarrollamos e implementamos programas de seguros en nombre de las cautivas para garantizar que se identifiquen y mitiguen sus exposiciones al riesgo.</p>
-                        <a href="#" class="btn btn-primary">Sumar</a>
-                    </div>
-                </div>
+              <img src="<%: art.imagen.Url %>" title="Imagen del producto" class="card-img-top" alt="Imagen no encontrada"
+               onerror="this.onerror=null; this.src='https://www.italfren.com.ar/images/catalogo/imagen-no-disponible.jpeg';">
             </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/Content/producto2.png" class="card-img-top" alt="Servicios de secretaría de la empresa">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicios de secretaría de la empresa</h5>
-                        <p class="card-text">Aseguramos la administración eficiente de los cautivos, proporcionando servicios completos de secretaría de la empresa y administración de reuniones de la junta directiva</p>
-                        <a href="#" class="btn btn-primary">Sumar</a>
-                    </div>
-                </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%:art.nombre %></h5>
+                <p class="card-text">Codigo: <%:art.codigo%></p>
+                <p class="card-text">Descripcion: <%:art.descripcion%></p>
+                <p class="card-text">Categoria: <%:art.categoria %></p>
+                <p class="card-text">Marca: <%:art.marca %></p>
+                <div class="text-bg-success p-3">$ <%:art.precio%></div>
+              </div>
             </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/Content/producto3.png" class="card-img-top" alt="Servicios de Gestión Financiera">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicios de Gestión Financiera</h5>
-                        <p class="card-text">Brindamos un servicio completo de gestión financiera a cautivas que incluye administración de efectivo, servicios de inversión, informes financieros, servicios de auditoría, servicios de informes regulatorios</p>
-                        <a href="#" class="btn btn-primary">Sumar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+              
+          </div>
+          <a href="SeccionProductos.aspx" Class="btn btn-secondary">Volver</a>
+    </div>
+    <% } %>
+   </div>
 </asp:Content>

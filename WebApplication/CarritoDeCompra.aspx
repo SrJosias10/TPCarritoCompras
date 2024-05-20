@@ -12,38 +12,16 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  
-
-    <!-- Main Content -->
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
                 <h1 class="display-4 text-center">Carrito de Compras</h1>
                 <div id="cartItems" class="mt-4">
-                    <!-- ejemplo de contenido (para generar automaticamente) -->
-                    <!--
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="..." class="card-img" alt="Product Image">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Producto 1</h5>
-                                    <p class="card-text">Descripción del producto.</p>
-                                    <p class="card-text"><small class="text-muted">$Precio</small></p>
-                                    <button class="btn btn-danger" onclick="removeItem(this)">Eliminar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-5">
         <div class="container p-4">
             <div class="row">
@@ -69,16 +47,20 @@
     <!-- Custom JS to manage cart -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Example products (to be replaced by real data)
             const products = [
-                { id: 1, name: "Producto 1", description: "Descripción del producto 1.", price: 10.99, image: "https://via.placeholder.com/150" },
-                { id: 2, name: "Producto 2", description: "Descripción del producto 2.", price: 15.99, image: "https://via.placeholder.com/150" },
-                { id: 3, name: "Producto 3", description: "Descripción del producto 3.", price: 20.99, image: "https://via.placeholder.com/150" }
+                <% foreach (dominio.Articulo art in carrito) { %>
+                {
+                    id: "<%: art.Id %>",
+                    name: "<%: art.nombre %>",
+                    description: "<%: art.descripcion %>",
+                    price: <%= art.precio %>,
+                    image: "<%: art.imagen.Url %>"
+                },
+                <% } %>
             ];
 
             const cartItems = document.getElementById('cartItems');
 
-            // Function to render cart items
             function renderCartItems() {
                 cartItems.innerHTML = '';
                 products.forEach(product => {
@@ -95,7 +77,7 @@
                                     <h5 class="card-title">${product.name}</h5>
                                     <p class="card-text">${product.description}</p>
                                     <p class="card-text"><small class="text-muted">$${product.price.toFixed(2)}</small></p>
-                                    <button class="btn btn-danger" onclick="removeItem(${product.id})">Eliminar</button>
+                                    <button class="btn btn-danger" onclick="removeItem('${product.id}')">Eliminar</button>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +86,6 @@
                 });
             }
 
-            // Function to remove an item from the cart
             window.removeItem = function (id) {
                 const index = products.findIndex(product => product.id === id);
                 if (index > -1) {
@@ -113,7 +94,6 @@
                 }
             }
 
-            // Initial render
             renderCartItems();
         });
     </script>
